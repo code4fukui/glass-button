@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>glass-button demo</title>
+</head><body>
+<h1>glass-button demo</h1>
+
+<script type="module" src="./glass-button.js"></script>
+<glass-button id=btn1>BUTTON</glass-button>
+<glass-button-round id=btn2>送信</glass-button-round>
+
+<div>backgroundColor <input type="color" id="bg"></div>
+
+<textarea><script type="module" src="https://code4fukui.github.io/glass-button/glass-button.js"></script>
+<glass-button id=btn1>BUTTON</glass-button>
+<glass-button-round id=btn2>送信</glass-button-round>
+</textarea>
+
+<div>
+  designed by <a href=https://twitter.com/ash_creator/status/1587052503778017280>@ash_creator</a><br>
+  programmed by <a href=https://github.com/code4fukui/glass-button/>Code for FUKUI</a><br>
+</div>
+<script type="module">
+import { GlassButton, GlassButtonRound } from "./glass-button.js";
+
+btn1.onclick = () => alert("押されました");
+
+let idx = 1;
+btn2.onclick = (e) => {
+  const btn = new GlassButtonRound("追加" + idx++);
+  e.target.parentElement.insertBefore(btn, e.target);
+  btn.onclick = () => alert("押されました");
+};
+
+bg.onchange = () => {
+  document.body.style.backgroundColor = bg.value;
+};
+</script>
+
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #822;
+  color: white;
+}
+body > * {
+  margin-bottom : 40px ;
+}
+a {
+  color: white !important;
+}
+textarea {
+  width: 90vw;
+  max-width: 50em;
+  height: 6em;
+}
+</style>
+</body></html>
