@@ -105,6 +105,7 @@ export class GlassButton extends HTMLElement {
     const sr = this.attachShadow({ mode: "open" })
     const c = document.createElement("div");
     c.className = "glass-button";
+    c.setAttribute("part", "glass-button");
     if (options?.appendClass) {
       c.classList.add(options.appendClass);
     }
