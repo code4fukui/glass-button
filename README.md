@@ -22,3 +22,8 @@ import { GlassButton, GlassButtonRound } from "https://code4fukui.github.io/glas
 document.body.appendChild(new GlassButton("BUTTON"));
 document.body.appendChild(new GlassButtonRound("送信"));
 ```
+
+## Credit
+
+designed by [@ash_creator](https://twitter.com/ash_creator/status/1587052503778017280)
+programmed by [Code for FUKUI](https://code4fukui.github.io/)
