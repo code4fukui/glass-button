@@ -1,5 +1,7 @@
 # glass-button
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A collection of custom HTML elements for creating glass-style buttons.
 
 ## Demo
@@ -34,3 +36,6 @@ document.body.appendChild(new GlassButtonRound("送信"));
 ## Credit
 - Designed by [@ash_creator](https://twitter.com/ash_creator/status/1587052503778017280)
 - Programmed by [Code for FUKUI](https://code4fukui.github.io/)
+
+## License
+This library is provided under the MIT license.
