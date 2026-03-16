@@ -38,4 +38,4 @@ document.body.appendChild(new GlassButtonRound("送信"));
 - Programmed by [Code for FUKUI](https://code4fukui.github.io/)
 
 ## License
-This library is provided under the MIT license.
+MIT License — see [LICENSE](LICENSE).
